@@ -1,0 +1,217 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{John}{Mastroberti}
+\title{Resumé}                               % optional, remove / comment the line if not wanted
+\address{1426 State Road 135 S}{Nashville, IN 47448}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~(843)~907~3619}                   % optional, remove / comment the line if not wanted
+\email{johnmastroberti123@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{johnmm.xyz}
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2016--2019}{B.A., Cornell University}{College of Arts and Sciences}{Ithaca, NY}{\textit{GPA: 3.932}}{Majors: Physics (Magna Cum Laude), Math (Cum Laude)}
+\cventry{2020--present}{Ph.D. student, Indiana University}{Department of Physics}{Bloomington, IN}{}{Concentration: experimental neutrino physics}
+
+%\cventry{2012--2016}{Coastal Carolina University}{Scholars Academy}{Conway, SC}{\textit{GPA: 4.000}}{}
+
+
+
+\section{Experience}
+\subsection{Research}
+\cventry{2020--present}{COH-Ar-750}{Rex Tayloe, Dan Salvat}{Center for Exploration of Energy and Matter}{Bloomington, IN}{
+COH-Ar-750 is the proposed successor for CENNS-10, a liquid argon detector for coherent elastic neutrino-nucleus scattering.
+I am currently focused on the development of simulation software for CENNS-10 and COH-Ar-750.
+My work has focused on refactoring and modernizing our group's existing software, and I have been exploring new detector design directions such as the use of xenon-doping to increase scintillation light yield.
+I have also been involved in developing the cooling system for COH-Ar-750, which will utilized pressure-controlled liquid nitrogen for temperature regulation.
+I have investigated the viability of such a cooling system, and preliminary results show that this design would be feasible.
+}
+
+\cventry{2019--present}{CESR Linac Positron Converter}{Jim Shanks, David Sagan}{CLASSE}{Ithaca, NY}{
+In the fall of 2019, I started working on modeling the linear accelerator (Linac) used by Cornell's Electron Storage Ring (CESR).
+My work has focussed on modelling the positron converter, a slab of tungsten alloy which provides CESR with its positrons via Bremmstrahlung.
+Using Geant, a library for high energy physics simulations, we have developed a numerical model for the converter.
+This model will soon be added into Bmad, the software library used at Cornell to simulate and model CESR.
+This work will allow for the full simulation of the CESR linac in Bmad, enabling optimizations of the Linac lattice that were previously impossible.
+}
+
+\cventry{2019--2020}{Tao development}{David Sagan}{Cornell Lab for Accelerator based Science and Education (CLASSE)}{Ithaca, NY}{
+Tao is Cornell's Tool for Accelerator Optics, and it is used to model several particle accelerators around the world.
+I worked on developing a GUI for Tao using python.
+We also developed a general purpose scripting interface for the program.
+%We are currently preparing a paper on this work to be published in the proceedings of the International Particle Accelerator Conference.
+}
+
+\cventry{2019--2020}{Conservative Machine Learning}{Veit Elser}{Ithaca, NY}{}{
+My advisor, Veit Elser, and I explored an alternative machine learning algorithm referred to as conservative learning.
+Unlike stochastic gradient descent, which is almost universally employed in today's machine learning algorithms, conservative learning aims to take the smallest step size possible when updating the weights of the neural network.
+}
+%\cventry{2019--present}{Conservative Machine Learning}{Veit Elser}{Ithaca, NY}{}{
+%My adviser, Veit Elser, and I are exploring an alternative machine learning algorithm referred to as conservative learning.
+%Unlike stochastic gradient descent, which is almost universally employed in today's machine learning algorithms, conservative learning aims to take the smallest step size possible when updating the weights of the neural network.
+%We hope to find that this method has better stability properties or a faster rate of convergence than stochastic gradient descent.
+%}
+
+\cventry{2017}{Potentially Hazardous Asteroid Interception}{Louis Rubbo}{Conway, SC}{}{
+During the summer of 2017, I worked with Dr. Louis Rubbo at Coastal Carolina University on this personal project.
+We analyzed interception techniques that could be employed to reach and deflect potentially hazardous asteroids.
+Most of this work was done using MATLAB to model orbits and compute interception trajectories.
+}
+
+\subsection{Vocational}
+\cventry{2020--2021}{Physics Associate Instructor (TA)}{Indiana University Bloomington}{Bloomington, IN}{}{
+As an associate instructor, I taught weekly discussion and lab sections for IU's general physics courses.
+I also graded lab reports, quizzes, and exams, proctored exams, and held office hours.
+}
+
+\cventry{2017--2019}{MATH 1120 Course Assistant}{Cornell University Math Department}{Ithaca, NY}{}{
+As a course assistant, I was responsible for grading the homeworks from one to two sections of MATH 1120 each week.
+I also held a study group session each week where students worked together on their homework and asked course assistants for help if necessary.
+}
+
+\cventry{2016--2017}{Special Collections Processing Assistant}{Cornell University Division of Rare and Manuscript Collections}{Ithaca, NY}{}{
+My primary role as a processing assistant was to convert existing paper and index card catalogs to Excel spreadsheets.  This occasionally required me to examine and label each item in a collection, many of which were from the 19th century or earlier.
+%\newline{}
+%During my time as a processing assistant, I also developed a python script for automatically converting between human readable date formats (e.g. November 7, 1950) and machine readable date formats (e.g. 1950-11-07).  This allowed date conversion to be done quickly, whereas this task previously needed to be done by hand.
+}
+
+\cventry{2015--2016}{Private Tutor}{Self Employed}{Conway, SC}{}{
+While I was high school senior at Scholars Academy, I worked as a private tutor for several students at Coastal Carolina University.  Most of these students were taking introductory physics or calculus, though I did find some work tutoring upper-level physics courses as well.  This experience helped me learn a great deal about being an effective tutor/teacher.
+}
+
+\section{Computer skills}
+
+\cvlistdoubleitem{C}{Modern C++}
+\cvlistdoubleitem{Python}{MATLAB}
+\cvlistdoubleitem{Git}{Make and CMake}
+\cvlistdoubleitem{Linux}{Shell scripting}
+\cvlistdoubleitem{Embedded Development}{SQL}
+\cvlistdoubleitem{HTML/CSS/Javascript}{LaTeX}
+
+%\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+%\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+%\section{Interests}
+%\cvitem{hobby 1}{Description}
+%\cvitem{hobby 2}{Description}
+%\cvitem{hobby 3}{Description}
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+\section{References}
+\begin{cvcolumns}
+  \cvcolumn{Name}{\begin{itemize}
+\item Rex Tayloe
+\item Dan Salvat
+\item David Sagan
+\item Jim Shanks
+\end{itemize}}
+  \cvcolumn{Email}{
+\emaillink{rtayloe@indiana.edu} \\
+\emaillink{dsalvat@iu.edu} \\
+\emaillink{david.sagan@cornell.edu} \\
+\emaillink{shanks@cornell.edu} \\
+}
+  \cvcolumn{Relationship}{
+Research Advisor \\
+Research Advisor \\
+Research Advisor \\
+Research Advisor \\
+}
+  %\cvcolumn{Name}{\begin{itemize}\item Louis Rubbo \item Marcie Farwell \item Teddy Einstein\end{itemize}}
+  %\cvcolumn{Email}{lrubbo@coastal.edu \\ msf252@cornell.edu \\ ee256@cornell.edu}
+  %\cvcolumn{Relationship}{Research adviser \\ Supervisor \\ Supervisor}
+\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%\date{January 01, 1984}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%\makelettertitle
+
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+
+%Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+
+%Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+%Albert Einstein discovered that $e=mc^2$ in 1905.
+
+%\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+%\makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
