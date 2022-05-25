@@ -39,42 +39,56 @@
 \makecvtitle
 
 \section{Education}
-% Three items {{{
+% Two items {{{
 \cventry{2016--2019}{B.A., Cornell University}
 {College of Arts and Sciences}{Ithaca, NY}
 {\textit{GPA: 3.932}}
 {Majors: Physics (Magna Cum Laude), Math (Cum Laude)}
 
-\cventry{2020--2021}{M.S., Indiana University}
+\cventry{2020--2022}{M.S., Indiana University}
 {Department of Physics}{Bloomington, IN}{\textit{GPA: 4.0}}{}
-
-\cventry{2021--present}{Ph.D. student, Indiana University}
-{Department of Physics}{Bloomington, IN}{}
-{Concentration: experimental neutrino physics}
 %}}}
 
 
 \section{Work Experience}
 \subsection{Software Development}
+% Precise Systems Contracting
+\cventry{2022--present}{Principle Computer Systems Analyst}%{{{
+{Jay Twigg, Scot Hawkins, Jim Craig}
+{Precise Systems/NSWC Crane}{Crane, IN}{
+\techlist{RF Hardware/Software Engineering, C++, Java, MATLAB, CMake, Git}
+I am a contractor for Precise Systems supporting WXQN (Electronic Warfare) at the Naval Surface Warfare Center in Crane.
+My responsibilities are currently split between two projects: SSP Telemetry and TESS.
+SSP oversees the Navy's strategic nuclear arsenal and coordinates annual test flights.
+Our group supports SSP by recording telemetry data transmitted over RF from re-entry bodies during missile test flights.
+WXQN aims to improve the integrity of telemetry data recorded in the most critical part of the test flights by providing an integrated hardware and software solution for telemetry recording.
+My role in this effort is to maintain and update our system's Java-based control software as needed and to support our system's deployment on test missions.
+\\
+TESS is the Tactical Environmental Survey System and aims to put a more versatile tool for electromagnetic environment (EME) survey in the hands of the warfighter.
+The EME data that TESS records is critical for use in the design of RF-based equipment sent into theater.
+I am the primary developer for TESS's software stack, which currently consists of C++ and MATLAB.
+Over the course of just two weeks, I have brought the system from a defunct state to the point where record and basic display functionality is implemented and undergoing testing and evaluation.
+}%}}}
+
 % COHERENT
-\cventry{2020--present}{Neutrino Detector Simulation}%{{{
+\cventry{2020--2022}{Neutrino Detector Simulation}%{{{
 {Rex Tayloe, Dan Salvat}
 {Center for Exploration of Energy and Matter}{Bloomington, IN}{
 \techlist{C++, Make, Git, Geant4, ROOT}
-In my current position, I work on the development of my research group's simulation software.
-Our detectors measure the elastic neutrino-argon scattering cross section as part of the COHERENT collaboration.
-The simulation software I work on is written in C++ and makes use of Geant4, a semi-modern C++ library commonly used for particle physics simulations.
-We also make use of the C++ library ROOT for data serialization and analysis.
+In this position, I worked on the development of my research group's simulation software.
+Our detectors measured the elastic neutrino-argon scattering cross section as part of the COHERENT collaboration.
+The simulation software I worked on is written in C++ and makes use of Geant4, a semi-modern C++ library commonly used for particle physics simulations.
+We also made use of the C++ library ROOT for data serialization and analysis.
 This program is used by several researchers in the collaboration, and Git is used for version control.
 Simulation runs are primarily performed on computing clusters to take advantage of parallel execution.
 \\
-I am primarily responsible for maintaining, modernizing, and adding new features to our simulation program.
-One of the large projects I have worked on was to modernize how the detector geometry is specified.
+I was primarily responsible for maintaining, modernizing, and adding new features to our simulation program.
+One of the large projects I worked on was to modernize how the detector geometry is specified.
 I added support for GDML geometry specification, where an XML-like file containing the detector geometry is loaded at run-time.
 Previously, this information was hard-coded into the simulation executable and any changes to the detector required recompilation.
-I am currently working on updating the scintillation physics engine to support xenon doped liquid argon.
-I am also implementing a regression testing system so that refactoring and modernization projects can be undertaken with greater confidence.
-This project has given me great experience working on a moderate size code-base that was written by someone other than myself.
+I also worked on updating the scintillation physics engine to support xenon doped liquid argon.
+Additionally, I worked towards implementing a regression testing system so that refactoring and modernization projects could be undertaken with greater confidence.
+This project gave me great experience working on a moderate size code-base that was written by someone other than myself.
 }%}}}
 
 % Linac
@@ -160,23 +174,23 @@ This experience helped me learn a great deal about being an effective tutor and 
 }
 %}}}
 
-\subsection{Other}
-
-\cventry{2016--2017}{Special Collections Processing Assistant}{Cornell University Division of Rare and Manuscript Collections}{Ithaca, NY}{}{
-My primary role as a processing assistant was to convert existing paper and index card catalogs to Excel spreadsheets.  This occasionally required me to examine and label each item in a collection, many of which were from the 19th century or earlier.
-\\
-During my time as a processing assistant, I also developed a python script
-for automatically converting between human readable date formats (e.g.
-November 7, 1950) and machine readable date formats (e.g. 1950-11-07).
-This allowed date conversion to be done quickly, whereas this task
-previously needed to be done by hand.
-}
-
-\cventry{2011--2015}{Professional Musician}{}{Myrtle Beach, SC}{}{
-I worked as a professional musician over the summers throughout middle and high school.
-My family's band played hundreds of jobs each summer, both at resorts in Myrtle Beach and at private parties and events.
-I also took private bass guitar lessons and was exposed to a wide variety of music genres.
-}
+% \subsection{Other}
+% 
+% \cventry{2016--2017}{Special Collections Processing Assistant}{Cornell University Division of Rare and Manuscript Collections}{Ithaca, NY}{}{
+% My primary role as a processing assistant was to convert existing paper and index card catalogs to Excel spreadsheets.  This occasionally required me to examine and label each item in a collection, many of which were from the 19th century or earlier.
+% \\
+% During my time as a processing assistant, I also developed a python script
+% for automatically converting between human readable date formats (e.g.
+% November 7, 1950) and machine readable date formats (e.g. 1950-11-07).
+% This allowed date conversion to be done quickly, whereas this task
+% previously needed to be done by hand.
+% }
+% 
+% \cventry{2011--2015}{Professional Musician}{}{Myrtle Beach, SC}{}{
+% I worked as a professional musician over the summers throughout middle and high school.
+% My family's band played hundreds of jobs each summer, both at resorts in Myrtle Beach and at private parties and events.
+% I also took private bass guitar lessons and was exposed to a wide variety of music genres.
+% }
 
 \section{Computer skills}
 
@@ -199,27 +213,31 @@ I also took private bass guitar lessons and was exposed to a wide variety of mus
 \section{References}
 \begin{cvcolumns}%{{{
   \cvcolumn{Name}{\begin{itemize}
+\item Scot Hawkins
+\item Jim Craig
 \item Rex Tayloe
-\item Dan Salvat
+% \item Dan Salvat
 \item David Sagan
-\item Jim Shanks
+% \item Jim Shanks
 \end{itemize}}
   \cvcolumn{Email}{
+\emaillink{scot.a.hawkins@us.navy.mil} \\
+\emaillink{james.e.craig@us.navy.mil} \\
 \emaillink{rtayloe@indiana.edu} \\
-\emaillink{dsalvat@iu.edu} \\
+% \emaillink{dsalvat@iu.edu} \\
 \emaillink{david.sagan@cornell.edu} \\
-\emaillink{shanks@cornell.edu} \\
+% \emaillink{shanks@cornell.edu} \\
 }
   \cvcolumn{Relationship}{
-Research Advisor \\
-Research Advisor \\
+Supervisor \\
+Supervisor \\
 Research Advisor \\
 Research Advisor \\
 }
 \end{cvcolumns}%}}}
 
 
-\input{cover.tex}
+% \input{cover.tex}
 
 
 \end{document}
