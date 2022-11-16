@@ -1,0 +1,151 @@
+% Preamble {{{
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\newcommand{\techlist}[1]{\textbf{Key technologies: {#1}}\\}
+%}}}
+
+% personal data
+\name{Nicole}{Mastroberti}
+\title{Resumé}
+\address{1426 State Road 135 S}{Nashville, IN 47448}
+\phone[mobile]{+1~(843)~325~5090}
+\email{nltiger530@gmail.com}
+\photo[64pt][0pt]{picture}
+\begin{document}
+\makecvtitle
+
+\section{Education}
+% Three items {{{
+\cventry{Graduated 2016}{Academy for the Arts, Science, and Technology}
+{Advanced Art Program}{Honor Roll} {} {}
+
+\cventry{Fall 2016}{Coastal Carolina University}
+{Undeclared Major}{}{\textit{GPA: 4.0/4.0}}{}
+
+\cventry{Graduated 2019}{Horry Georgetown Technical College}
+{Associate in Applied Science}{Forestry Management Technology (Wildlife concentration)}{\textit{GPA: 3.7/4.0} (President's List, \textit{Cum Laude})}{}
+%}}}
+
+\section{Awards}
+\cventry{}{North American Forest Technician Honorary for Superior Academic \mbox{Achievement}}{}{}{}
+{The Council of Eastern Forest Technician Schools}
+
+\section{Employment History}
+\cventry{2020--2022}{Veterinary Technician}%{{{
+{}
+{Furry Friends Veterinary Hospital}{Bloomington, IN}{
+\begin{itemize}
+\item
+Help the puppers
+\item
+Deal with psycho management and clients
+\end{itemize}
+}%}}}
+
+\cventry{2019--2020}{Create a Cake Associate}%{{{
+{}
+{Wegmans}{Ithaca, NY}{
+\begin{itemize}
+\item
+Responsible for producing inventory for bakery
+\item
+Took and made special orders, including custom cakes
+\item
+Interacted with customers by answering questions and serving desserts
+\item
+Kept an organized and sanitized workspace at all times
+\item
+Organized and rotated stock in refrigerators and freezers
+\end{itemize}
+}%}}}
+
+\cventry{2018--2019}{Mapping Intern}%{{{
+{}
+{Horry Soil and Water Conservation District and Natural Resources Conservation Service}{Conway, SC}{
+\begin{itemize}
+\item
+Provided assistance to District Manager for three 319 Water Quality Programs
+\item
+Organized booth and spole at educational outreach program to children about soils and plants
+\item
+Completed inventory and evaluation for wetland determinations
+\item
+Water sampling
+\item
+Uploaded files for conservation planning in ArcGIS
+\item
+Created maps and wrote Conservation Plans in Toolkit (NRCS Software)/ArcGIS
+\item
+Completed various filing and organizational tasks
+\end{itemize}
+}%}}}
+
+\cventry{2018--2019}{Student Tutor}%{{{
+{}
+{Horry Georgetown Technical College}{Georgetown, SC}{
+\begin{itemize}
+\item
+Tutored students in Foresty and Wildlife classes
+\end{itemize}
+}%}}}
+
+\cventry{2017--2018}{Sales Associate}{}{Home Depot}{Myrtle Beach, SC}{}
+\cventry{2016--2017}{Keyholder}{}{Xtreme Photo}{Myrtle Beach, SC}{}
+\cventry{2015--2016}{Team Member}{}{Chick-fil-A}{Myrtle Beach, SC}{}
+
+\section{Community Service}
+
+\cventry{}{Volunteered for HGTC Forestry/Wildlife outreach programs}{}{}{}{}
+\cventry{}{Carolina Forest Beautification Committee}{}{}{}{}
+\cventry{}{Girl Scouts of America}{}{}{}{}
+
+\section{Special Skills}
+
+\cventry{}{Fluent in customer service}{}{}{}{}
+\cventry{}{Proficient in Microsoft Office Suite}{}{}{}{}
+\cventry{}{Proficient in ArcGIS}{}{}{}{}
+\cventry{}{Proficient in Toolkit, Protracts (NRCS Software)}{}{}{}{}
+\cventry{}{Web Soil Survey}{}{}{}{}
+\cventry{}{Various GPS units}{}{}{}{}
+
+
+\section{References}
+\begin{itemize}
+\item
+Nicole Freeland: Ithaca Wegmans, Bakery Manager
+\begin{itemize}
+\item
+Phone: (607) 277-5800
+\item
+Email: bakery.ithaca@wegmans.com
+\end{itemize}
+\end{itemize}
+
+
+% \input{cover.tex}
+
+
+\end{document}
