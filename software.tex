@@ -33,8 +33,8 @@
 \address{1426 State Road 135 S}{Nashville, IN 47448}
 \phone[mobile]{+1~(843)~907~3619}
 \email{johnmastroberti123@gmail.com}
-\homepage{johnmm.xyz}
-\photo[64pt][0pt]{picture}
+\homepage{johnmm.net}
+%\photo[64pt][0pt]{picture}
 \begin{document}
 \makecvtitle
 
@@ -52,36 +52,70 @@
 
 \section{Work Experience}
 \subsection{Software Development}
+% Government Civilian
+\cventry{2023--present}{Scientist}{}{NSWC Crane}{Crane, IN}{
+\techlist{RF Hardware/Software Engineering, C++, Java, MATLAB, CMake, Git}
+Security Clearance Eligibility: DoD Top Secret//Sensitive Compartmented Information
+\\ \hspace*{1em}
+I serve as a government civilian scientist in the Expeditionary Electromagnetic Warfare division at Naval Surface Warfare Center (NSWC) Crane.
+I am the lead scientist on multiple RF related projects, primarily in support of Navy Strategic Systems Programs (SSP).
+My SSP projects are designed to measure the effects of plasma on RF propagation for nuclear missile reentry bodies.
+I am the primary contributor on all software components of my projects, including instrument control software, graphical user interfaces, and data analysis algorithms.
+Most components are implemented in C++, with some components implemented in MATLAB, Java, and HTML/CSS/JavaScript.
+As lead scientist, I also manage all aspects of project technical execution, including hardware and software development, test and evaluation, technical reviews, and flight test support logistics.
+\\ \hspace*{1em}
+One of the primary software components I am responsible for is a graphical user interface and instrument control system.
+This application controls our RF collection system during nuclear missile flight tests.
+Flight test support presents a unique operating environment, as all operations are under strict time constraints and support staff have many responsibilities to complete within a short time window.
+Therefore, our instrument control system is designed to be as easy to operate and fault tolerant as possible, and to log all relevent events.% in support of post-flight data analysis.
+\\ \hspace*{1em}
+Another major software component that I develop is the data analysis algorithms and routines for analyzing flight test data.
+Our system collects over 5 TB of RF data during a single flight test.
+Substantial digital signal processing is required to identify key moments during flight and extract the results required to support stakeholder objectives.
+%This software is primarily written in C++ to maximize performance.
+\\ \hspace*{1em}
+In 2023, I also lead a team to develop an acquisition plan for an electromagnetic training environment for Marine Air-Ground Task Force Training Center Twentynine Palms.
+This effort involved meeting with stakeholders, gathering requirements, and developing a high level system architecture, program execution schedule, and resource and cost estimates.
+\\ \hspace*{1em}
+This position is a continuation of my role as Principle Comupter Systems Analyst for Precise Systems.
+EEW division leadership recognized my outstanding performance as a contractor and offered me a position as a government civilian so that I could take on a leadership role on my projects.
+I have also used this opportunity to organize several software engineering lunch and learn sessions to foster workforce development for software developers within the division.
+}
+
 % Precise Systems Contracting
-\cventry{2022--present}{Principle Computer Systems Analyst}%{{{
-{Jay Twigg, Scot Hawkins, Jim Craig}
+\cventry{2022}{Principle Computer Systems Analyst}%{{{
+%{Jay Twigg, Scot Hawkins, Jim Craig}
+{}
 {Precise Systems/NSWC Crane}{Crane, IN}{
 \techlist{RF Hardware/Software Engineering, C++, Java, MATLAB, CMake, Git}
-I am a contractor for Precise Systems supporting WXQN (Electronic Warfare) at the Naval Surface Warfare Center in Crane.
-My responsibilities are currently split between two projects: SSP Telemetry and TESS.
+Security Clearance Eligibility: DoD Secret
+\\ \hspace*{1em}
+I worked as a contractor for Precise Systems supporting Expeditionary Electromagnetic Warfare (EEW) at Naval Surface Warfare Center Crane Division.
+My responsibilities were split between two projects: SSP Telemetry and TESS.
 SSP oversees the Navy's strategic nuclear arsenal and coordinates annual test flights.
-Our group supports SSP by recording telemetry data transmitted over RF from re-entry bodies during missile test flights.
-WXQN aims to improve the integrity of telemetry data recorded in the most critical part of the test flights by providing an integrated hardware and software solution for telemetry recording.
-My role in this effort is to maintain and update our system's Java-based control software as needed and to support our system's deployment on test missions.
-\\
+Our group supported SSP by recording telemetry data transmitted over RF from re-entry bodies during missile test flights.
+We aimed to improve the integrity of telemetry data recorded in the most critical part of the test flights by providing an integrated hardware and software solution for telemetry recording.
+My role in this effort was to maintain and update our system's Java-based control software, develop data analysis routines using C++ and MATLAB, and support our system's deployment for flight tests.
+\\ \hspace*{1em}
 TESS is the Tactical Environmental Survey System and aims to put a more versatile tool for electromagnetic environment (EME) survey in the hands of the warfighter.
 The EME data that TESS records is critical for use in the design of RF-based equipment sent into theater.
-I am the primary developer for TESS's software stack, which currently consists of C++ and MATLAB.
-Over the course of just two weeks, I have brought the system from a defunct state to the point where record and basic display functionality is implemented and undergoing testing and evaluation.
+I was the primary developer for TESS's software stack, which consisted of of C++ and MATLAB code.
+Over the course of two weeks, I brought the system from a defunct state to the point where recording and basic display functionality was implemented and undergoing testing and evaluation.
 }%}}}
 
 % COHERENT
 \cventry{2020--2022}{Neutrino Detector Simulation}%{{{
-{Rex Tayloe, Dan Salvat}
+{}%{Rex Tayloe, Dan Salvat}
 {Center for Exploration of Energy and Matter}{Bloomington, IN}{
 \techlist{C++, Make, Git, Geant4, ROOT}
+\hspace*{1em}
 In this position, I worked on the development of my research group's simulation software.
 Our detectors measured the elastic neutrino-argon scattering cross section as part of the COHERENT collaboration.
 The simulation software I worked on is written in C++ and makes use of Geant4, a semi-modern C++ library commonly used for particle physics simulations.
 We also made use of the C++ library ROOT for data serialization and analysis.
 This program is used by several researchers in the collaboration, and Git is used for version control.
 Simulation runs are primarily performed on computing clusters to take advantage of parallel execution.
-\\
+\\ \hspace*{1em}
 I was primarily responsible for maintaining, modernizing, and adding new features to our simulation program.
 One of the large projects I worked on was to modernize how the detector geometry is specified.
 I added support for GDML geometry specification, where an XML-like file containing the detector geometry is loaded at run-time.
@@ -93,10 +127,11 @@ This project gave me great experience working on a moderate size code-base that 
 
 % Linac
 \cventry{2019--2021}{Positron Converter Simulation and Modeling}%{{{
-{Jim Shanks, David Sagan}
+{}%{Jim Shanks, David Sagan}
 {Cornell Lab for Accelerator based Science and Education (CLASSE)}
 {Ithaca, NY}{
 \techlist{C++, CMake, Subversion, Geant4, GSL}
+\hspace*{1em}
 This project focused on developing simulation and modeling software for positron converters.
 These particle accelerator components are used to produce positrons for use in electron-positron colliders.
 I wrote this software from scratch using C++17.
@@ -107,8 +142,10 @@ This software is packaged as part of the Bmad library of accelerator simulation 
 
 % Tao GUI
 \cventry{2019--2020}{Tao GUI Development}%{{{
-{David Sagan}{CLASSE}{Ithaca, NY}{
+%{David Sagan}
+{}{CLASSE}{Ithaca, NY}{
 \techlist{Python, Fortran}
+\hspace*{1em}
 Tao is Cornell's Tool for Accelerator Optics, a program used around the world for modeling particle accelerators written in Fortran 95.
 I worked on developing a GUI for Tao using python.
 We also developed a general purpose scripting interface for the program.
@@ -116,16 +153,21 @@ We also developed a general purpose scripting interface for the program.
 
 % Conservative learning
 \cventry{2019--2020}{Conservative Machine Learning}%{{{
-{Veit Elser}{Ithaca, NY}{}{
+%{Veit Elser}
+{}{Cornell University}{Ithaca, NY}{
 \techlist{C, Machine Learning}
+\hspace*{1em}
 My advisor and I explored an alternative machine learning algorithm referred to as conservative learning.
 Unlike stochastic gradient descent, which is almost universally employed in today's machine learning algorithms, conservative learning aims to take the smallest step size possible when updating the weights of the neural network.
 }%}}}
 
 % PHA
 \cventry{2017}{Potentially Hazardous Asteroid Interception}%{{{
-{Louis Rubbo}{Conway, SC}{}{
+%{Louis Rubbo}
+{}
+{Conway, SC}{}{
 \techlist{MATLAB}
+\hspace*{1em}
 During the summer of 2017, I worked at Coastal Carolina University on this personal project.
 We analyzed interception techniques that could be employed to reach and deflect potentially hazardous asteroids.
 Most of this work was done using MATLAB to model orbits and compute interception trajectories.
@@ -136,6 +178,7 @@ Most of this work was done using MATLAB to model orbits and compute interception
 \cventry{2018--present}{Linux Tinkering}%{{{
 {}{}{}{
 \techlist{Linux, Shell scripting, GNU Core Utilities}
+\hspace*{1em}
 I have been using GNU/Linux as my primary operating system since 2018.
 I am passionate about free software and try to use it in place of proprietary software whenever possible.
 This hobby has made me very proficient at the command line.
@@ -146,6 +189,7 @@ These are skills that add to my strengths as a software developer.
 \cventry{2020--present}{Personal Website}%{{{
 {}{}{}{
 \techlist{Javascript, Node.js, HTML/CSS, MySQL, Linux}
+\hspace*{1em}
 I run my personal website, \url{johnmm.xyz}, on a Linux VPS hosted with Vultr.
 I host a basic HTML and CSS site using NGINX, and have a personal email service running on the server as well.
 This web-server also hosts a simple web app for chore tracking that I developed using client and server side JavaScript.
@@ -157,17 +201,20 @@ This service also uses MySQL for database management.
 % Three items {{{
 \cventry{2020--2021}{Physics Associate Instructor (TA)}
 {Indiana University Bloomington}{Bloomington, IN}{}{
+\hspace*{1em}
 As an associate instructor, I taught weekly discussion and lab sections for IU's general physics courses.
 I also graded lab reports, quizzes, and exams, proctored exams, and held office hours.
 }
 
 \cventry{2017--2019}{MATH 1120 Course Assistant}
 {Cornell University Math Department}{Ithaca, NY}{}{
-As a course assistant, I was responsible for grading the homework from one to two sections of MATH 1120 each week.
+\hspace*{1em}
+  As a course assistant, I was responsible for grading the homework from one to two sections of MATH 1120 (Calculus II) each week.
 I also held a study group session each week where students worked together on their homework and asked course assistants for help if necessary.
 }
 
 \cventry{2015--2016}{Private Tutor}{Self Employed}{Conway, SC}{}{
+\hspace*{1em}
 While I was high school senior, I worked as a private tutor for several students at Coastal Carolina University. 
 Most of these students were taking introductory physics or calculus, though I did find some work tutoring upper-level physics courses as well.
 This experience helped me learn a great deal about being an effective tutor and teacher.
@@ -209,32 +256,45 @@ This experience helped me learn a great deal about being an effective tutor and 
 \cvlistdoubleitem{Git}{CMake and Make}
 \cvlistdoubleitem{Node.js}{SQL}%}}}
 
+\section{Awards}
 
-\section{References}
-\begin{cvcolumns}%{{{
-  \cvcolumn{Name}{\begin{itemize}
-\item Scot Hawkins
-\item Jim Craig
-\item Rex Tayloe
-% \item Dan Salvat
-\item David Sagan
-% \item Jim Shanks
-\end{itemize}}
-  \cvcolumn{Email}{
-\emaillink{scot.a.hawkins@us.navy.mil} \\
-\emaillink{james.e.craig@us.navy.mil} \\
-\emaillink{rtayloe@indiana.edu} \\
-% \emaillink{dsalvat@iu.edu} \\
-\emaillink{david.sagan@cornell.edu} \\
-% \emaillink{shanks@cornell.edu} \\
+\cventry{2023}{Twentynine Palms EMTE Acquistion Plan}
+{Time Off Award}{NSWC Crane}{}{
+I was awarded for my leadership of the MAGTFTC Twentynine Palms EMTE acquisition plan effort with the following recognition:
+\\
+\textit{For the 29 Palms effort, Mr. John Mastroberti has taken on the role of Lead Systems Engineer.
+In this position, Mr. Mastroberti worked with the 29 Palms Program Office to define and understand the requirements, assembled a Crane/29 Palms Team, and is working to complete the proposal ahead of schedule for the 29 Palms Program Manager.
+The 29 Palms work had been paused at Crane due to lack of funding and support personnel, but since Mr. Mastroberti accepted the lead role, the customer relationship has improved significantly.
+Thanks for all your hard work!}
 }
-  \cvcolumn{Relationship}{
-Supervisor \\
-Supervisor \\
-Research Advisor \\
-Research Advisor \\
-}
-\end{cvcolumns}%}}}
+
+
+
+%\section{References}
+%\begin{cvcolumns}%{{{
+%  \cvcolumn{Name}{\begin{itemize}
+%\item Scot Hawkins
+%\item Jim Craig
+%\item Rex Tayloe
+%% \item Dan Salvat
+%\item David Sagan
+%% \item Jim Shanks
+%\end{itemize}}
+%  \cvcolumn{Email}{
+%\emaillink{scot.a.hawkins@us.navy.mil} \\
+%\emaillink{james.e.craig@us.navy.mil} \\
+%\emaillink{rtayloe@indiana.edu} \\
+%% \emaillink{dsalvat@iu.edu} \\
+%\emaillink{david.sagan@cornell.edu} \\
+%% \emaillink{shanks@cornell.edu} \\
+%}
+%  \cvcolumn{Relationship}{
+%Supervisor \\
+%Supervisor \\
+%Research Advisor \\
+%Research Advisor \\
+%}
+%\end{cvcolumns}%}}}
 
 
 % \input{cover.tex}
